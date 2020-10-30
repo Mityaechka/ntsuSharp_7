@@ -19,10 +19,11 @@ namespace Csharp_labs
             }
 
             Console.WriteLine("All tests was passed successfully\n\n\n");
-
+            //наименование с переменных с маленькой буквы
             WorkerComission Pyotr = new WorkerComission("Pytor Solo", Sex.woman, 10000, 0.05);
             WorkerHour Semyon = new WorkerHour("Semyon So", Sex.man, 1500, 2150, 150);
 
+            //за джоджо лайк
             Factory Jojo = new Factory("Jojo INC.", "Anime");
 
             Jojo.RecruitMemberStaff(Pyotr);

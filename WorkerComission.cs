@@ -31,6 +31,7 @@ namespace Csharp_labs
 
         public override uint CalculateSalary()
         {
+            //бесконечные конвертации стоят "выигранных" 3 байт?
             uint priceSum = ((uint)Convert.ToInt32(Math.Round(this.standardSalary + (this.totalSoldSum * this.salaryRate))));
             this.totalSoldSum = 0;
             return priceSum;

@@ -15,6 +15,7 @@ namespace Csharp_labs
         public WorkerHour(string fcs, Sex sex, uint standardSalaryPerHour, uint proccessionSalaryPerHour, uint standardHoursPerMonth)
             : base(ref fcs, sex)
         {
+            //если так хочется контролировать что передается в эту хуйню используй хотя бы builder или другой паттерн
             if(fcs.Length < 2)
                 throw new Exception("fcs should be > 1");
 

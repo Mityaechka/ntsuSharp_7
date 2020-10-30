@@ -5,6 +5,7 @@ using System.Text;
 
 namespace Csharp_labs
 {
+    //Man,Woman
     enum Sex
     {
         man = 1,
@@ -12,11 +13,12 @@ namespace Csharp_labs
     }
     abstract class Worker
     {
+        //заменить на свойства
         private readonly string fcs;
         private readonly Sex sex;
         
 
-
+        //зачем ref параметр ?
         // constructors
         public Worker(ref string fcs, Sex sex)  {
             this.fcs = fcs;
@@ -27,7 +29,7 @@ namespace Csharp_labs
         // logic
         public abstract void DoWork(uint value);
 
-
+        //используй enum
         public abstract string getClassType();
 
         public virtual uint CalculateSalary() 
@@ -35,7 +37,7 @@ namespace Csharp_labs
             // Console.WriteLine($"Worker with name {this.fcs} got salary:");
             return 0u;
         }
-
+        //зачем?
         public virtual Dictionary<string, string> getWorkerInfo()
         {
             Dictionary<string, string> info = new Dictionary<string, string>(2);
@@ -44,7 +46,8 @@ namespace Csharp_labs
             return info;
         }
         // getters
-
+        //пиздец, джавист ебаный
+        //public string Fcs { get; private set; }
         public string Fcs()
         {
             return fcs;

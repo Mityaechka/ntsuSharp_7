@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Csharp_labs
 {
+    //почему тесты вылетают?
     class Test
     {
         public static void TestWorkerComission()
